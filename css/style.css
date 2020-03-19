@@ -43,13 +43,14 @@ section {
   color: #003057;
 }
 .main {
-  background: url(../img/main-bg.jpg) center center no-repeat;
   padding-top: 4rem;
+  background: url(../img/main-bg.jpg) center center no-repeat;
   background-size: cover;
   height: 80rem;
   color: #ffffff;
 }
 .main_header {
+  position: relative;
   height: 5rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -117,6 +118,13 @@ section {
 .main_header .contacts .order_call:hover {
   background-color: #40a400;
 }
+.main_header .burger_menu {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
 .description {
   color: #003057;
   font-family: 'Open Sans', sans-serif;
@@ -167,6 +175,26 @@ section {
 }
 .description_details_item .midle_item {
   bottom: 3.7rem;
+}
+.arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #4abd00;
+  border-radius: 50%;
+}
+.prev {
+  left: 0;
+  background: url('../img/left-arrow.png') center no-repeat;
+  background-size: 100%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.png) center no-repeat;
+  background-size: 100%;
 }
 .gallery {
   font-family: 'Open Sans', sans-serif;
@@ -415,4 +443,380 @@ section {
   margin-left: -2rem;
   display: block;
   text-align: right;
+}
+@media (max-width: 1199px) {
+  .section_title {
+    font-size: 3.8rem;
+  }
+  .main {
+    height: 60rem;
+  }
+  .main .slogan {
+    top: 6rem;
+    left: 1.5rem;
+  }
+  .main .nav_link {
+    margin-left: 1.5rem;
+  }
+  .main .contacts_number {
+    margin: 0;
+  }
+  .main .contacts .order_call {
+    top: 6rem;
+    left: 4rem;
+  }
+  .description_details {
+    margin-right: -1.5rem;
+  }
+  .description_details_item {
+    padding-left: 1.5rem;
+  }
+  .description_details_item .item_content span {
+    font-size: 7rem;
+  }
+  .description_details_item .item_content .big {
+    font-size: 8rem;
+  }
+  .description_details_item .item_content img {
+    width: 8rem;
+  }
+  .gallery_header .gallery_nav_btn {
+    padding: .5rem 1.7rem;
+  }
+  .gallery_content_item {
+    height: 20rem;
+  }
+  .advantages_content_item {
+    padding: 2rem 0rem 1.5rem 2rem;
+    height: 20rem;
+  }
+  .advantages_content_item p {
+    font-size: 1.4rem;
+  }
+  .beside_btn {
+    margin-left: 2rem;
+  }
+  .beside_places_item {
+    padding: 1.5rem 0rem 2rem 2rem;
+  }
+  .quality .big_four {
+    top: -4.5rem;
+    left: 6rem;
+    font-size: 39.5rem;
+  }
+  .consultation .form_btn {
+    width: 50%;
+  }
+  .footer_contacts {
+    margin: 0;
+  }
+  .footer .rights {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    margin: 8rem 0;
+  }
+  .section_title {
+    font-size: 3.2rem;
+  }
+  .main {
+    height: 50rem;
+    background-position: 25% 0%;
+    background-size: 180%;
+  }
+  .main_header .slogan {
+    top: 0.7rem;
+    left: 23rem;
+  }
+  .main_header .nav {
+    display: none;
+  }
+  .main_header .contacts {
+    display: none;
+  }
+  .main_header .burger_menu {
+    display: block;
+  }
+  .description_text {
+    font-size: 2rem;
+  }
+  .description_details {
+    margin-top: 3.5rem;
+  }
+  .description_details_item {
+    padding-left: 1rem;
+  }
+  .description_details_item .item_title {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    height: 13rem;
+  }
+  .description_details_item .item_content span {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  .description_details_item .item_content p {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+  .description_details_item .item_content .big {
+    font-size: 6.5rem;
+  }
+  .description_details_item .item_content img {
+    width: 6rem;
+  }
+  .description_details_item .midle_item {
+    bottom: 2.7rem;
+  }
+  .gallery_header {
+    margin-bottom: 2rem;
+  }
+  .gallery_header .gallery_nav {
+    padding-left: 0;
+  }
+  .gallery_header .gallery_nav_btn {
+    font-size: 1.8rem;
+  }
+  .gallery_content_item {
+    margin-bottom: 2rem;
+    height: 30rem;
+  }
+  .advantages_header {
+    margin-bottom: 2rem;
+  }
+  .advantages_content_item {
+    margin-bottom: 2rem;
+    height: 18.5rem;
+  }
+  .beside_header .beside_btn {
+    margin-left: 4.5rem;
+    font-size: 1.7rem;
+  }
+  .beside_content {
+    margin: 3rem 0;
+  }
+  .beside_content_text {
+    margin-bottom: 2rem;
+  }
+  .beside_content_text .beside_text {
+    font-size: 1.5rem;
+  }
+  .beside_content_text .beside_text_title h3 {
+    margin-top: 2.5rem;
+    margin-left: 12.5rem;
+    font-size: 1.7rem;
+  }
+  .beside_content_text .beside_text_logo img {
+    width: 80%;
+  }
+  .beside_content_photo img {
+    margin: 0;
+    width: 100%;
+  }
+  .beside_places_item {
+    padding: 1rem 0rem 1rem 1rem;
+  }
+  .beside_places_item .item_img {
+    margin-bottom: 1rem;
+  }
+  .beside_places_item .item_img img {
+    height: 7rem;
+  }
+  .quality {
+    padding: 0;
+  }
+  .quality_content {
+    padding: 2.5rem 0 2.5rem 25rem;
+  }
+  .quality_content .big_four {
+    top: -5.5rem;
+    left: 3rem;
+    font-size: 32rem;
+  }
+  .quality_content_slogan {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  .quality_content .eco_list {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .consultation_text {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+  }
+  .consultation_form input {
+    width: 70%;
+    font-size: 1.8rem;
+  }
+  .consultation_form .form_btn {
+    width: 30%;
+  }
+  .map {
+    height: 40rem;
+  }
+  .footer {
+    padding: 3rem 0;
+    font-size: 1.3rem;
+  }
+  .footer_logo {
+    padding-bottom: 2.5rem;
+  }
+  .footer_slogan {
+    display: none;
+  }
+  .footer h4 {
+    font-size: 1.5rem;
+  }
+  .footer_social {
+    margin-left: 0;
+  }
+  .footer .rights {
+    margin: 0;
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  section {
+    margin: 6rem 0;
+  }
+  .section_title {
+    font-size: 2.5rem;
+  }
+  .main {
+    height: 32rem;
+    background-position: 75% 0;
+    background-size: 200%;
+  }
+  .description_text {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+  .description_details {
+    margin-right: 0;
+    padding-left: 8rem;
+  }
+  .gallery .gallery_nav_btn {
+    padding: 0.3rem 1.2rem;
+    font-size: 1.5rem;
+  }
+  .gallery_content_item {
+    height: 20rem;
+  }
+  .beside .beside_btn {
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    padding: 0.6rem 1rem;
+  }
+  .beside_places {
+    padding-left: 8rem;
+  }
+  .quality_content {
+    padding: 2rem;
+  }
+  .quality .big_four {
+    display: none;
+  }
+  .consultation_text {
+    font-size: 1.5rem;
+  }
+  .map {
+    height: 30rem;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    overflow: hidden;
+  }
+  section {
+    margin: 4rem 0;
+  }
+  .section_title {
+    font-size: 2.2rem;
+  }
+  .main {
+    padding-top: 2rem;
+    height: 15rem;
+    background-position: 65% 0;
+    background-size: 250%;
+  }
+  .main_logo img {
+    width: 100%;
+  }
+  .main .slogan {
+    display: none;
+  }
+  .description .eco_logo {
+    margin-top: 1rem;
+  }
+  .description_text {
+    font-size: 1.5em;
+  }
+  .description_details {
+    padding: 0 5rem;
+  }
+  .description_details_item {
+    border-right: 0.5rem solid #4abd00;
+  }
+  .gallery_header {
+    margin-bottom: 1rem;
+  }
+  .gallery .gallery_nav {
+    flex-wrap: wrap;
+  }
+  .gallery .gallery_nav_btn {
+    margin-bottom: 1rem;
+    padding: 0.3rem .7rem;
+    font-size: 1.4rem;
+    width: 49%;
+  }
+  .advantages_content_item {
+    padding: 0rem 0rem 0rem 2rem;
+    height: 16rem;
+  }
+  .beside_btn {
+    display: none;
+  }
+  .beside_content_text .beside_text_logo img {
+    width: 50%;
+  }
+  .beside_content_text .beside_text_title h3 {
+    margin-top: 1rem;
+    margin-left: 10rem;
+  }
+  .beside_content_text .beside_text {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+  .beside_places {
+    padding: 0 5rem;
+  }
+  .beside_places_item {
+    border-right: 0.5rem solid #4abd00;
+  }
+  .consultation_form input {
+    width: 100%;
+  }
+  .consultation_form .form_btn {
+    width: 70%;
+  }
+  .map {
+    height: 20rem;
+  }
+  .footer {
+    font-size: 1.2rem;
+  }
+  .footer h4 {
+    font-size: 1.4rem;
+  }
+  .footer_contacts {
+    margin: 1.5rem 0;
+  }
+  .footer_social {
+    width: 80%;
+  }
 }
