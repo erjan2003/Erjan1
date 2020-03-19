@@ -233,6 +233,9 @@ section {
   color: #fff;
   background: #4abd00;
 }
+.beside_btn:hover {
+  background-color: #40a400;
+}
 .beside_content {
   margin: 6rem 0;
 }
@@ -345,6 +348,9 @@ section {
   text-align: left;
   color: #fff;
   background-color: #4abd00;
+}
+.consultation_form .form_btn .input_green:hover {
+  background-color: #40a400;
 }
 .consultation_form .form_btn .arrow {
   position: absolute;

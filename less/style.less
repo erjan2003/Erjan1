@@ -237,7 +237,10 @@ section {
         padding: .8rem 2.2rem;
         font-size: 2.1rem;
         color: #fff;
-        background: @green;    
+        background: @green;
+        &:hover {
+            background-color: darken(@green, 5%);
+        }  
    }
    &_content {
        margin: 6rem 0;
@@ -361,6 +364,9 @@ section {
                 text-align: left;
                 color: #fff;
                 background-color: @green;
+                &:hover {
+                    background-color: darken(@green, 5%);
+                }
             }
             .arrow {
                 position: absolute;
